@@ -18,10 +18,12 @@ We would like to develop an app that doctors can easily use to input specific pa
 ## ARCHITECTURE
 
 ### - Visual inspirations and dashboard sketch.
+This is the final sketch of the visualizations we'd like to create:
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/SKETCH%20OF%20THE%20PROJECT.png)
+
 ### - ETL: 
     1. Data cleansing of the original dataset.
     2. Database creation (SQL).
-
 
 ### - Creation of the API (Python & Flask).
 ### - Dashboard coding (JavaScript).
