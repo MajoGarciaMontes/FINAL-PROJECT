@@ -31,3 +31,8 @@ CORS(app)
 # 1. Main route:
 # Defined the end point:
 @app.route("/")
+
+
+# To run the app:
+if __name__ == "__main__":
+    app.run(debug=True)
