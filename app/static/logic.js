@@ -1,1 +1,1 @@
-// coding for final adjusting for our visualizations
+// coding for final adjutments for our visualizations
