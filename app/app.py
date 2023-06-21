@@ -36,8 +36,8 @@ CORS(app)
 # Defined the end point:
 @app.route("/")
 def home():
-    print("Server received request for 'Home' page...")
-    return ("Hola! Como estas?")
+    print("Welcome to our Project 4 API - Predicting Breast Cancer with Machine Learning")
+    return (Pagina inicio API)
 
 
 
@@ -54,7 +54,7 @@ def home():
 
 
 # 3. Scores route:
-@app.route("/API/model-scores")
+@app.route("/api/model-scores")
 def model_scores():
     scores_d = {'breast_cancer_model_prediction_scores':
                 {'accuracy': 98,
