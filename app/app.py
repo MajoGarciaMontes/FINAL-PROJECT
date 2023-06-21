@@ -53,6 +53,16 @@ def home():
 # mandar la clasificacion de la prediccion
 
 
+# 3. Scores route:
+@app.route("/API/model-scores")
+def model_scores():
+    scores_d = {'breast_cancer_model_prediction_scores':
+                {'accuracy': 98,
+                'precision': {'benign': 99, 'malignant': 96},
+                'recall': {'benign': 98, 'malignant': 98},
+                'f1-score': {'benign': 98, 'malignant': 97}}}
+    return jsonify(scores_d)
+
 
 # To run the app:
 if __name__ == "__main__":
