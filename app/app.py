@@ -41,7 +41,7 @@ def home():
 
 
 
-# Main route:
+# 2. Inputs processing route for machine learning:
 
 # importar variables (inputs del dashboard) (ahorita cree dummy variables para testing)
 dummy_radius_mean = 19.69
