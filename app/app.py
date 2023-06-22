@@ -117,13 +117,13 @@ def make_prediction():
     input_df = input_df.T
 
     # 3. Load the scaler of our trained model with 'Pickle5' and transform our DataFrame:
-    scaler_filename = 'ML_model/rf_scaler.pkl'
+    scaler_filename = '../ML_model/rf_scaler.pkl'
     with open(scaler_filename, 'rb') as file1:
         loaded_scaler = pickle5.load(file1)
     X_transformed = loaded_scaler.transform(input_df)
 
     # 4. Load our trained random forest model with 'Pickle5':
-    model_filename = 'ML_model/rf_model.pkl'  # Adjust the file path accordingly
+    model_filename = '../ML_model/rf_model.pkl'  # Adjust the file path accordingly
     with open(model_filename, 'rb') as file2:
         loaded_model = pickle5.load(file2)
 
