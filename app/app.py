@@ -37,118 +37,102 @@ CORS(app)
 @app.route("/")
 def home():
     print("Welcome to our Project 4 API - Predicting Breast Cancer with Machine Learning")
-    return (Pagina inicio API)
+    return ("Pagina inicio API")
 
 
 
 # 2. Inputs processing route for machine learning:
 
 # importar variables (inputs del dashboard) (ahorita cree dummy variables para testing)
-dummy_radius_mean = 19.69
-dummy_texture_mean = 21.25
-dummy_perimeter_mean = 130.0
-dummy_area_mean = 1203.0
-dummy_smoothness_mean = 0.1096
-dummy_compactness_mean = 0.1599
-dummy_concavity_mean = 0.1974
-dummy_concave_points_mean = 0.1279
-dummy_symmetry_mean = 0.2069
-dummy_fractal_dimension_mean = 0.05999
-dummy_radius_se = 0.7456
-dummy_texture_se = 0.7869
-dummy_perimeter_se = 4.585
-dummy_area_se = 94.03
-dummy_smoothness_se = 0.00615
-dummy_compactness_se = 0.04006
-dummy_concavity_se = 0.03832
-dummy_concave_points_se = 0.02058
-dummy_symmetry_se = 0.0225
-dummy_fractal_dimension_se = 0.004571
-dummy_radius_worst = 23.57
-dummy_texture_worst = 25.53
-dummy_perimeter_worst = 152.5
-dummy_area_worst = 1709.0
-dummy_smoothness_worst = 0.1444
-dummy_compactness_worst = 0.4245
-dummy_concavity_worst = 0.4504
-dummy_concave_points_worst = 0.243
-dummy_symmetry_worst = 0.3613
-dummy_fractal_dimension_worst = 0.08758
 
-# darles el formato adecuado a las variables
-input_list = [dummy_radius_mean,
-        dummy_texture_mean,
-        dummy_perimeter_mean,
-        dummy_area_mean,
-        dummy_smoothness_mean,
-        dummy_compactness_mean,
-        dummy_concavity_mean,
-        dummy_concave_points_mean,
-        dummy_symmetry_mean,
-        dummy_fractal_dimension_mean,
-        dummy_radius_se,
-        dummy_texture_se,
-        dummy_perimeter_se,
-        dummy_area_se,
-        dummy_smoothness_se,
-        dummy_compactness_se,
-        dummy_concavity_se,
-        dummy_concave_points_se,
-        dummy_symmetry_se,
-        dummy_fractal_dimension_se,
-        dummy_radius_worst,
-        dummy_texture_worst,
-        dummy_perimeter_worst,
-        dummy_area_worst,
-        dummy_smoothness_worst,
-        dummy_compactness_worst,
-        dummy_concavity_worst,
-        dummy_concave_points_worst,
-        dummy_symmetry_worst,
-        dummy_fractal_dimension_worst]
+@app.route('/api/make-prediction', methods=['POST'])
+def make_prediction():
+    # Extract input values from the request:
+    input_radius_mean = request.form.get('input_radius_mean')
+    input_texture_mean = request.form.get('input_texture_mean')
+    input_perimeter_mean = request.form.get('input_perimeter_mean')
+    input_area_mean = request.form.get('input_area_mean')
+    input_smoothness_mean = request.form.get('input_smoothness_mean')
+    input_compactness_mean = request.form.get('input_compactness_mean')
+    input_concavity_mean = request.form.get('input_concavity_mean')
+    input_concave_points_mean = request.form.get('input_concave_points_mean')
+    input_symmetry_mean = request.form.get('input_symmetry_mean')
+    input_fractal_dimension_mean = request.form.get('input_fractal_dimension_mean')
+    input_radius_se = request.form.get('input_radius_se')
+    input_texture_se = request.form.get('input_texture_se')
+    input_perimeter_se = request.form.get('input_perimeter_se')
+    input_area_se = request.form.get('input_area_se')
+    input_smoothness_se = request.form.get('input_smoothness_se')
+    input_compactness_se = request.form.get('input_compactness_se')
+    input_concavity_se = request.form.get('input_concavity_se')
+    input_concave_points_se = request.form.get('input_concave_points_se')
+    input_symmetry_se = request.form.get('input_symmetry_se')
+    input_fractal_dimension_se = request.form.get('input_fractal_dimension_se')
+    input_radius_worst = request.form.get('input_radius_worst')
+    input_texture_worst = request.form.get('input_texture_worst')
+    input_perimeter_worst = request.form.get('input_perimeter_worst')
+    input_area_worst = request.form.get('input_area_worst')
+    input_smoothness_worst = request.form.get('input_smoothness_worst')
+    input_compactness_worst = request.form.get('input_compactness_worst')
+    input_concavity_worst = request.form.get('input_concavity_worst')
+    input_concave_points_worst = request.form.get('input_concave_points_worst')
+    input_symmetry_worst = request.form.get('input_symmetry_worst')
+    input_fractal_dimension_worst = request.form.get('input_fractal_dimension_worst')
 
-# importar modelo RF con pickle (scaler)
+    # Process the input values and execute the code:
+    # 1. Convert all the input values into a list:
+    input_l = [input_radius_mean,
+               input_texture_mean,
+               input_perimeter_mean,
+               input_area_mean,
+               input_smoothness_mean,
+               input_compactness_mean,
+               input_concavity_mean,
+               input_concave_points_mean,
+               input_symmetry_mean,
+               input_fractal_dimension_mean,
+               input_radius_se,
+               input_texture_se, 
+               input_perimeter_se,
+               input_area_se,
+               input_smoothness_se,
+               input_compactness_se,
+               input_concavity_se,
+               input_concave_points_se,
+               input_symmetry_se,
+               input_fractal_dimension_se,
+               input_radius_worst,
+               input_texture_worst,
+               input_perimeter_worst,
+               input_area_worst,
+               input_smoothness_worst,
+               input_compactness_worst,
+               input_concavity_worst,
+               input_concave_points_worst,
+               input_symmetry_worst,
+               input_fractal_dimension_worst]
 
-input_list_df = pd.DataFrame(input_list, columns=['inputs'])
-input_list_df = input_list_df.T
+    # 2. Convert the list into a Pandas DataFrame:
+    input_df = pd.DataFrame(input_l, columns=['inputs'])
+    input_df = input_df.T
 
-# Load the scaler and apply it to the input_array
-# Load the saved scaler using pickle
-scaler_filename = '/content/rf_scaler.pkl'
-with open(scaler_filename, 'rb') as file:
-    loaded_scaler = pickle5.load(file)
-X_transformed = loaded_scaler.transform(input_list_df)
+    # 3. Load the scaler of our trained model with 'Pickle5' and transform our DataFrame:
+    scaler_filename = 'ML_model/rf_scaler.pkl'
+    with open(scaler_filename, 'rb') as file1:
+        loaded_scaler = pickle5.load(file1)
+    X_transformed = loaded_scaler.transform(input_df)
 
-# Load the saved model using pickle
-model_filename = '/content/rf_model.pkl'  # Adjust the file path accordingly
-with open(model_filename, 'rb') as file:
-    loaded_model = pickle5.load(file)
+    # 4. Load our trained random forest model with 'Pickle5':
+    model_filename = 'ML_model/rf_model.pkl'  # Adjust the file path accordingly
+    with open(model_filename, 'rb') as file2:
+        loaded_model = pickle5.load(file2)
 
-# Make predictions
-prediction = loaded_model.predict(X_transformed)
+    # 5. Make a prediction with our trained model and the input DataFrame:
+    prediction = loaded_model.predict(X_transformed)
 
-prediction
-
-
-
-# # Load the saved model using pickle
-# file_path = '/content/rf_model.pkl'
-
-# with open(file_path, 'rb') as file:
-#   loaded_model = pickle5.load(file)
-
-# # hacer predicciones
-# prediction = loaded_model.predict(X_scaled)
-
-# # Send the prediction classification as JSON response
-# jsonify({"prediction": prediction})
-# darles el formato adecuado a las variables
-
-# importar modelo RF con pickle (scaler)
-
-# hacer predicciones
-
-# mandar la clasificacion de la prediccion
+    # Generate a response with the prediction made:
+    result = {'result': prediction}
+    return jsonify(result)
 
 
 # 3. Scores route:
