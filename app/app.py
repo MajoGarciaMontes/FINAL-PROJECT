@@ -13,7 +13,7 @@ import pickle5
 from flask import Flask, jsonify, request, render_template
 
 # Set up the database:
-engine = create_engine("postgresql+psycopg2://postgres:pleycode@localhost/breast_cancer")
+engine = create_engine("postgresql+psycopg2://postgres:Camilita29!@localhost/breast_cancer")
 
 # Reflected the existing database into a new model:
 Base = automap_base()
