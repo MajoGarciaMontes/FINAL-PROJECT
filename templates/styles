@@ -1,0 +1,4 @@
+.bg-pink {
+    --bs-danger-bg-subtle: pink;
+    background-color: var(--bs-danger-bg-subtle);
+}

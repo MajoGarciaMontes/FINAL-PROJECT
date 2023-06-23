@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        th {
+            background-color: pink;
+        }
+
+        td {
+            background-color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table bg-pink">
+        <thead>
+            <tr>
+                <th scope="col">FUN FACT</th>
+                <th scope="col">FUN FACT</th>
+                <th scope="col">FUN FACT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Did you know breast cancer can affect both women and men?</td>
+                <td>Early detection improves survival rates.</td>
+                <td>The 5-year relative survival rate for localized breast cancer is around 99%.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
