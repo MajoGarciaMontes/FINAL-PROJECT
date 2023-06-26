@@ -145,26 +145,23 @@ This project has contributed to our comprehension of the pipeline that should be
 #### Project presentation:
 It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Presentation/Breast%20cancer%20ML.pptx). The deck is titled: *'Breask Cancer ML.pptx'*.
 
+#### The *Database* folder:
+It contains the "ETL and ML model testing.ipynb" file which shows the essential code for data cleansing and model training, physical Entity-Relationship Diagram (ERD) of our database, as well as the schema and the SQL queries for database creation.
 
-*explain all the folders ej.*
+#### The *ML_model* folder:
+It contains two files: "rf_model.pkl" file and "rf_scaler.pkl" which are pickle files for use in our Flask API.
+
+#### The *Presentation* folder:
+It's a Power Point file that contains the slide deck of our presentation.: "Breast cancer ML.pptx" which will inform you about all the relevant information about our porject.
+
 #### The *Resources* folder:
-
-It contains the dashboard images, the files used to clean the data, the full poll and our selected questions, the images that inspired our visualizations, and the original CSV file of the poll.
+It contains the first sketch and final dashboard images, the files used to clean the data, the original database csv and the clean database csv.
 
 #### The *app* folder:
+It has the API we developed, the static folder which has the "graphs.js", also you can find the templates folder, which contains the "base.html" and "index.html", which synergy together to give life to our dashboard.
 
-It has the API we developed, a clean CSV with the data we used, and the HTML and JavaScript codes of our dashboard.
-
-#### The *database* folder:
-
-It contains the physical ERD of our database and the schema.
-
-#### The *Breask Cancer ML.pdf* file:
-
-It's a PDF file that contains the slide deck of our presentation.
 
 ### Final words:
-
 We hope you, user, find our dashboard of good use because we know we have.
 
 ## Data Reference
