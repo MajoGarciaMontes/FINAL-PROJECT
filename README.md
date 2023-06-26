@@ -17,11 +17,23 @@ These variables include clinical attributes such as diagnosis, radius, texture, 
 
 ### Our objectives:
 
+The objective of this project was divided into three distinct stages. Firstly, the team focused on identifying and preparing a comprehensive database. This involved sourcing relevant data and ensuring its accuracy and completeness.
+The second stage entailed the development of a sophisticated machine learning model capable of providing accurate results by analyzing tumor measurements. This involved leveraging advanced algorithms and techniques to train the model on the collected data, allowing it to make precise predictions or classifications.
+Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. They skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
+
 
 ### Personal reasons why we chose this topic:
 
+The objective of this project was divided into three distinct stages. Firstly, the team focused on identifying and preparing a comprehensive database. This involved sourcing relevant data and ensuring its accuracy and completeness.
+The second stage entailed the development of a sophisticated machine learning model capable of providing accurate results by analyzing tumor measurements. This involved leveraging advanced algorithms and techniques to train the model on the collected data, allowing it to make precise predictions or classifications.
+Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. They skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
+
 
 ### Our project's rationale:
+
+The rationale for our project lies in addressing the critical need for accurate and efficient breast cancer detection. Breast cancer is a prevalent and potentially life-threatening disease that affects numerous individuals worldwide. The existing diagnostic methods, although effective, can be time-consuming, costly, and may have limitations in terms of accessibility.
+Our project aims to leverage the power of machine learning and data analysis to develop a reliable and automated system for breast cancer detection. By training a machine learning model on a comprehensive database of patient information, we seek to enhance the accuracy and efficiency of breast cancer diagnoses. This has the potential to improve patient outcomes, facilitate early detection, and enable timely intervention and treatment.
+Additionally, our project aims to bridge the gap in healthcare accessibility. By developing a system that can provide accurate assessments and predictions, we hope to empower healthcare professionals and individuals, particularly in areas with limited access to specialized healthcare facilities. This can potentially bring the benefits of advanced diagnostic capabilities to a wider population, contributing to more equitable healthcare outcomes.
 
 
 ### Finding "the" dataset:
@@ -41,6 +53,47 @@ This repository showcases a dashboard that portrays the answer to 2 principal qu
 1. Title: Breast cancer prediction model (Machine Lerning Algorithm). <-- **
 2. Team members: Roberto Barrón, Luis Paul Garay, Alonso Lozano and Daniel Murillo. 
 3. Project description/outline: 
+Project Title: Breast Cancer Diagnosis Prediction using Machine Learning and Data Visualization
+
+##### - Introduction
+   - Overview of the project's objective in leveraging data analytics and visualization for breast cancer diagnosis
+   - Explanation of the significance of accurate and reliable predictions in healthcare decision-making
+
+##### - Data Collection and Preparation
+   - Identify and gather a comprehensive dataset containing information on malign and benign tumors
+   - Extract relevant variables and clinical attributes related to breast cancer diagnosis
+   - Perform data cleaning, preprocessing, and feature engineering as needed
+
+##### - Machine Learning Model Development
+   - Select appropriate machine learning algorithms (e.g., logistic regression, decision trees, random forests) for classification
+   - Split the dataset into training and testing sets
+   - Train the machine learning model using the training data
+   - Evaluate and optimize the model's performance using suitable metrics and techniques (e.g., cross-validation, hyperparameter tuning)
+
+##### - User-Friendly Dashboard Design and Development
+   - Create an intuitive and interactive dashboard for presenting the results of the machine learning model
+   - Develop user input functionalities for entering tumor measurements and clinical attributes
+   - Incorporate data visualization techniques to provide informative and visually appealing representations of the predictions and model reliability indicators
+   - Implement a user-friendly interface that facilitates ease of use for medical professionals
+
+##### - Testing and Validation
+   - Conduct rigorous testing to ensure the accuracy and robustness of the machine learning model
+   - Validate the model's predictions against known ground truth values
+   - Assess the reliability indicators and performance metrics of the model
+
+##### - Documentation and Reporting
+   - Document the project's methodology, including data collection, model development, and dashboard design
+   - Prepare a comprehensive report summarizing the project's objectives, processes, and outcomes
+   - Provide clear instructions on how to use the developed tool and interpret the predictions
+
+##### - Conclusion
+   - Recap the achievements and potential impact of the project in breast cancer diagnosis
+   - Reflect on the implications and benefits of utilizing data analytics and visualization in healthcare
+   - Discuss future possibilities for expanding the project's scope or integrating additional features to enhance its utility
+
+Note: This project outline provides a framework for developing a machine learning-based breast cancer diagnosis prediction tool with a user-friendly dashboard. You can customize and expand upon it to suit the specific requirements and resources available to you.
+
+
 4. Reearch question to answer: What classification fits the patient? (benign / malignant tumor) and What is the accuracy of the classification? <--- *Question answered*
 5. Dataset to be used: Breast Cancer Wisconsin (Diagnostic) Data Set, https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data/code <--- *Dataset used*
 6. Rough breakdown of tasks: <--- *Accurate*
