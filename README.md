@@ -98,6 +98,7 @@ Note: This project outline provides a framework for developing a machine learnin
 - User testing.
 - Presentation.
 
+
 #### Project development and changes:
 This is the final sketch of the visualizations we'd like to create:
 ![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Sketch%20project%20Breast%20Cancer.png)<br>
@@ -116,7 +117,19 @@ All our code is thoroughly commented, so that you understand what each piece is 
 *cambiar este texto no lo cambié para que se basen en el*
 We used JavaScript and HTML to create the interactive data visualizations mentioned in the previous paragraph. The API integrates Python for efficient data structuring, and restructures the data in a way that the end routes generate the desirable format of the JSONs. More importantly, we restructured the data so that we could compare the answers of three voter categories defined by the researchers of this survey: 'always' —also called *regular voters* in this project— voters or citizens who always vote, 'sporadic' voters or citizens who voted in at least two elections, but fewer than all-but-one, and 'rarely/never' voters —also called *non-voters* in this project— or those who voted in one or none of the elections in which they were eligible to vote. The dashboard lets the user easily filter the charts by those three categories. In order to create those filters, we used functions and [D3.JS](https://d3js.org/) to extract the voter categories and only the objects we needed, which were then turned into arrays to feed the charts. The HTML file was created with the help of [Bootstrap v5.3](https://getbootstrap.com/). Once again, all our code is thoroughly commented, so that you find it easy to understand and scale.
 
-*poner imagenes del dashboard terminado*
+
+#### Dashboard:
+![Dashboard1](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/aec9bc23-655a-4c8f-a5e1-3d6f7af88c1b)
+![Dashboard2](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/8fa7ce0d-897e-465c-9302-a92b0508ebb2)
+![Dashboard3](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/0bae7825-ec13-411b-8032-8529f809396e)
+![Dashboard4](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/7e4b48d8-9c19-4fa2-8510-ee5084cd3ef2)
+![Dashboard4](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/9e97ebed-6db8-4085-a09a-10ab41258300)
+![Dashboard5](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/ea1bd9b5-08f5-460a-902b-0015c88df0ad)
+![Dashboard6](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/299a06dd-a74a-4223-8454-5628c33f78ae)
+![Dashboard7](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/0cfa512d-8dd7-4cd1-88f5-0108747a8b64)
+![Dashboard8](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/51c31e26-498b-44ed-9371-9b41cfa67c13)
+![Dashboard9](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/d24033e8-38f2-4900-969f-9e681131da6b)
+![Dashboard10](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/70f35097-119c-4d59-bbd6-45ec45106b9e)
 
 
 #### User testing:
@@ -126,7 +139,7 @@ Our team of four members successfully loaded the database, API, and dashboard on
 It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](). The deck is titled: *'Breask Cancer ML.pdf
 '*, and it's a PDF file, so it's very accesible.
 
-### Conclusions:
+#### Conclusions:
 
 *explain all the folders ej.*
 ### The *Resources* folder:
