@@ -116,17 +116,19 @@ All our code is thoroughly commented, so that you understand what each piece is 
 *cambiar este texto no lo cambié para que se basen en el*
 We used JavaScript and HTML to create the interactive data visualizations mentioned in the previous paragraph. The API integrates Python for efficient data structuring, and restructures the data in a way that the end routes generate the desirable format of the JSONs. More importantly, we restructured the data so that we could compare the answers of three voter categories defined by the researchers of this survey: 'always' —also called *regular voters* in this project— voters or citizens who always vote, 'sporadic' voters or citizens who voted in at least two elections, but fewer than all-but-one, and 'rarely/never' voters —also called *non-voters* in this project— or those who voted in one or none of the elections in which they were eligible to vote. The dashboard lets the user easily filter the charts by those three categories. In order to create those filters, we used functions and [D3.JS](https://d3js.org/) to extract the voter categories and only the objects we needed, which were then turned into arrays to feed the charts. The HTML file was created with the help of [Bootstrap v5.3](https://getbootstrap.com/). Once again, all our code is thoroughly commented, so that you find it easy to understand and scale.
 
-*poner imagenes del dashboard terminado*
 
 
 #### User testing:
 Our team of four members successfully loaded the database, API, and dashboard onto our local computers. Collaboratively, we debugged the code until it ran smoothly. We first focused on constructing the API, defining routes for each element essential to our dashboard's objectives. As we progressed, we transition into coding HTML and Javascript, which allowed us to develop an appealing visual interface for the dashboard. Along the way, we acquired a new skill: utilizing the pickle 5 module for efficient serialization and deserialization of Python objects. This serves as a comprehensive resource to make us understand the implicit steps necessary for the successful development of a robust data analytics project.  
 
+
+### Conclusions:
+
 #### Project presentation:
 It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](). The deck is titled: *'Breask Cancer ML.pdf
 '*, and it's a PDF file, so it's very accesible.
 
-### Conclusions:
+
 
 *explain all the folders ej.*
 ### The *Resources* folder:
