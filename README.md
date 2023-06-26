@@ -99,12 +99,12 @@ Note: This project outline provides a framework for developing a machine learnin
 - Presentation.
 
 
-#### Project development and changes:
+### Project development and changes:
 This is the final sketch of the visualizations we'd like to create:
 ![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Sketch%20project%20Breast%20Cancer.png)<br>
 
 
-#### Creating a tailored API:
+### Creating a tailored API:
 We used SQL, Python, Pandas, Flask, and Flask-CORS to first, clean the data, then, build an Entity Relationship Diagram (ERD), a schema, and a local database, and last, create an API with personalized routes for each element of the dashboard. The routes created were the following:
 - / <--- *Welcome to our Project 4 API - Predicting Breast Cancer with Machine Learning. This is the main route of the API where the user finds information about all the other routes.*
 - /api/prediction/ <--- *This route make the prediction of our ML model with the input data.*
@@ -113,16 +113,16 @@ We used SQL, Python, Pandas, Flask, and Flask-CORS to first, clean the data, the
 All our code is thoroughly commented, so that you understand what each piece is doing.
 
 
-#### Connecting the API / dashboarding:
+### Connecting the API / dashboarding:
 *cambiar este texto no lo cambié para que se basen en el*
 We used JavaScript and HTML to create the interactive data visualizations mentioned in the previous paragraph. The API integrates Python for efficient data structuring, and restructures the data in a way that the end routes generate the desirable format of the JSONs. More importantly, we restructured the data so that we could compare the answers of three voter categories defined by the researchers of this survey: 'always' —also called *regular voters* in this project— voters or citizens who always vote, 'sporadic' voters or citizens who voted in at least two elections, but fewer than all-but-one, and 'rarely/never' voters —also called *non-voters* in this project— or those who voted in one or none of the elections in which they were eligible to vote. The dashboard lets the user easily filter the charts by those three categories. In order to create those filters, we used functions and [D3.JS](https://d3js.org/) to extract the voter categories and only the objects we needed, which were then turned into arrays to feed the charts. The HTML file was created with the help of [Bootstrap v5.3](https://getbootstrap.com/). Once again, all our code is thoroughly commented, so that you find it easy to understand and scale.
 
 
-#### User testing:
+### User testing:
 Our team of four members successfully loaded the database, API, and dashboard onto our local computers. Collaboratively, we debugged the code until it ran smoothly. We first focused on constructing the API, defining routes for each element essential to our dashboard's objectives. As we progressed, we transition into coding HTML and Javascript, which allowed us to develop an appealing visual interface for the dashboard. Along the way, we acquired a new skill: utilizing the pickle 5 module for efficient serialization and deserialization of Python objects. This serves as a comprehensive resource to make us understand the implicit steps necessary for the successful development of a robust data analytics project.  
 
 
-#### Dashboard:
+### Dashboard:
 
 
 ### Conclusions:
@@ -133,19 +133,19 @@ It took place via Zoom on 26th June 2023. You can find the slide deck above and 
 
 
 *explain all the folders ej.*
-### The *Resources* folder:
+#### The *Resources* folder:
 
 It contains the dashboard images, the files used to clean the data, the full poll and our selected questions, the images that inspired our visualizations, and the original CSV file of the poll.
 
-### The *app* folder:
+#### The *app* folder:
 
 It has the API we developed, a clean CSV with the data we used, and the HTML and JavaScript codes of our dashboard.
 
-### The *database* folder:
+#### The *database* folder:
 
 It contains the physical ERD of our database and the schema.
 
-### The *Breask Cancer ML.pdf* file:
+#### The *Breask Cancer ML.pdf* file:
 
 It's a PDF file that contains the slide deck of our presentation.
 
