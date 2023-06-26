@@ -38,12 +38,8 @@ CORS(app)
 @app.route("/")
 def home():
     print("Welcome to our Project 4 API - Predicting Breast Cancer with Machine Learning")
-    return (
-        f"<h1>Welcome to Breast cancer prediction model interface (Machine Lerning Algorithm) API for <i>Project 4</i>!</h1><br/>"
-        f"/api/prediction/ <- <i>This is the processing route for the machine learning model prediction</i><br/>"
-        f"/api/model-scores/ <- <i>This route send a JSON of our necesary values for dashboarding our priciple reliablity (on the model) indicators. </i><br/>"
-        f"/api/index/ <- <i>This route returned the HTML file to be able to open it while running the app.</i><br/>"
-    )
+    return ("Pagina inicio API")
+
 
 # 2. Inputs processing route for machine learning:
 @app.route('/api/prediction/', methods=['POST'])

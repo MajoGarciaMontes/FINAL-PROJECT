@@ -50,7 +50,7 @@
                 </div>
             </div><br>
             <div class="row">
-                <p class="lead">You patient has a breast tumor or a mass that has been <i>growing</i>, and it just isn't possible for them to have more tests done to confirm or rule out cancer for any reason: maybe your patient is uninsured and unfortunately can't cover the costs, maybe the health system is overstretched or maybe it will just take a long while to get those results and you need to be quicker...</p><br>
+                <p class="lead">Your patient has a breast tumor or a mass that has been <i>growing</i>, and it just isn't possible for them to have more tests done to confirm or rule out cancer for any reason: maybe your patient is uninsured and unfortunately can't cover the costs, maybe the health system is overstretched or maybe it will just take a long while to get those results and you need to be quicker...</p><br>
                 <!-- FACT 1: EARLY DETECTION IMPROVES SURVIVAL RATES -->
                 <div class="container-lg my-3 text-end rounded-circle">
                     <div class="row p-3 pb-0 pe-lg-0 pt-lg-4 align-items-center rounded-3 border shadow-lg" style="--bs-danger-bg-subtle: pink; background-color: var(--bs-danger-bg-subtle);">
@@ -213,43 +213,43 @@
                     </row>
                     <row class="row text-start">
                             <div class="mb-3">
-                                <label for="input_radius_worst" class="form-label">21. Radius worst</label>
+                                <label for="input_radius_worst" class="form-label">21. Radius largest</label>
                                 <input type="number" class="form-control" name="input_radius_worst" step="0.01" {% if input_d %} value="{{input_d.20}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_texture_worst" class="form-label">22. Texture worst</label>
+                                <label for="input_texture_worst" class="form-label">22. Texture largest</label>
                                 <input type="number" class="form-control" name="input_texture_worst" step="0.01" {% if input_d %} value="{{input_d.21}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_perimeter_worst" class="form-label">23. Perimeter worst</label>
+                                <label for="input_perimeter_worst" class="form-label">23. Perimeter largest</label>
                                 <input type="number" class="form-control" name="input_perimeter_worst" step="0.01" {% if input_d %} value="{{input_d.22}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_area_worst" class="form-label">24. Area worst</label>
+                                <label for="input_area_worst" class="form-label">24. Area largest</label>
                                 <input type="number" class="form-control" name="input_area_worst" step="0.01" {% if input_d %} value="{{input_d.23}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_smoothness_worst" class="form-label">25. Smoothness worst</label>
+                                <label for="input_smoothness_worst" class="form-label">25. Smoothness largest</label>
                                 <input type="number" class="form-control" name="input_smoothness_worst" step="0.01" {% if input_d %} value="{{input_d.24}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_compactness_worst" class="form-label">26. Compactness worst</label>
+                                <label for="input_compactness_worst" class="form-label">26. Compactness largest</label>
                                 <input type="number" class="form-control" name="input_compactness_worst" step="0.01" {% if input_d %} value="{{input_d.25}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_concavity_worst" class="form-label">27. Concavity worst</label>
+                                <label for="input_concavity_worst" class="form-label">27. Concavity largest</label>
                                 <input type="number" class="form-control" name="input_concavity_worst" step="0.01" {% if input_d %} value="{{input_d.26}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_concave_points_worst" class="form-label">28. Concave points worst</label>
+                                <label for="input_concave_points_worst" class="form-label">28. Concave points largest</label>
                                 <input type="number" class="form-control" name="input_concave_points_worst" step="0.01" {% if input_d %} value="{{input_d.27}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_symmetry_worst" class="form-label">29. Symmetry worst</label>
+                                <label for="input_symmetry_worst" class="form-label">29. Symmetry largest</label>
                                 <input type="number" class="form-control" name="input_symmetry_worst" step="0.01" {% if input_d %} value="{{input_d.28}}" disabled {% endif %} required>
                             </div>
                             <div class="mb-3">
-                                <label for="input_fractal_dimension_worst" class="form-label">30. Fractal dimension worst</label>
+                                <label for="input_fractal_dimension_worst" class="form-label">30. Fractal dimension largest</label>
                                 <input type="number" class="form-control" name="input_fractal_dimension_worst" step="0.01" {% if input_d %} value="{{input_d.29}}" disabled {% endif %} required>
                             </div>
                     </row>
@@ -302,8 +302,8 @@
                 <div class="col-lg p-3 p-lg-5 pt-lg-3 text-light justify-content-center">
                     <h3>Based on the data you entered, the tumor seems <strong>malignant</strong>:</h3>
                     <div class="row">
-                        <div class="col">
-                            <p>The measurements that you entered indicate that the tumor or mass contains cancerous cells! Please confirm this result with further testing by following the guidance of the Centers for Disease Control and Prevention (CDC) and follow up with the patient.</p>
+                        <div class="col text-start">
+                            <p>The measurements that you entered indicate that the tumor or mass contains cancerous cells! Please confirm this result with further testing by following the guidance of the Centers for Disease Control and Prevention (CDC) and follow up with the patient.<br><br>Just a tip: be on the look out especially for the following measurements in the following order: largest concave points, mean concave point, largest radius, largest perimeter, largest area, mean concavity, mean area, standard error of the area, mean radius, and largest concavity. They explain about 79% of our prediction, so a change in any of them could have devastating consequences.</p>
                         </div>
                     </div>
                 </div>
@@ -330,7 +330,9 @@
                     </div>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
+        <br>
 
 
 
@@ -347,7 +349,7 @@
                 </div>
                 <div class="col">
                     <h4>Our accuracy is 98%:</h4>
-                    <p>Our Machine Learning model's general accuracy score is 98%. We ran two models and chose the most accurate. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Our Machine Learning model's general accuracy score is 98%. We ran two models, compared their performance, and chose the most accurate one. Accuracy represents the portion of predictions that our model got right. This means that our model correctly predicts 98 out of 100 tumors, so it is doing a great job! Many models cannot even reach 95% of accuracy. But we didn't stop at accuracy, we wanted more, which is why we also report the scores below.</p>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -360,8 +362,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h4>Our precision is 96% or more:</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h4>Our precision for benign tumors is 99%:</h4>
+                    <p>That means that our model's precision is also really high! This score refers to the proportion of positive classifications <i>—or in our case 'benign' classifications—</i> our model made that were actually correct. Out of 100 real benign tumors, our model correctly predicts 99 of them, which is almost as high as you can go! However, the emphasis of our model was malignant tumors, and those are better explained by the next score: recall.</p>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -374,8 +376,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h4>Our recall is 98%!</h4>
-                    <p>This score reflects how valuable our model is. A recall score that high for predicting malignant tumors... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h4>Our recall score for malignant tumors is 98%!</h4>
+                    <p>This score truly reflects how <strong>valuable</strong> our model is. Malignant tumors are the important tumors because they will drastically change your patient's life. We needed a model that overemphasized that importance because the costs of mis-classifying a <i>malignant tumor</i> as a <i>benign tumor</i> are unimaginable, way too high... It would be unacceptable to send home a patient with cancer instead of giving them the appropriate treatment. The recall score focuses on preventing that scenario: out of 100 malignant tumors, our model correctly predicts 98 of them, which is incredibly high! We trained a Machine Learning model that would get as high a recall as it was possible, and we got it. Now it's your turn to use it.</p>
                 </div>
             </div>
             <div class="row align-items-center">
@@ -388,8 +390,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <h4>The harmonic mean of our precision and recall scores is 97% or higher:</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h4>Our F1-scores are 97% or higher:</h4>
+                    <p>Looking at this score might be an overkill, sort of unnecessary, but we didn't want to leave any stone unturned. We say that because the F1-score is the harmonic mean of precision and recall, and it is normally used to define accuracy only when a model is trained with imbalanced data <i>—data that contained wildly different numbers of 'benign tumor' and 'malignant tumor' observations</i>. However, the data we used to train our model was balanced. Still, even the most pedantic critic, who believes that data should be perfectly balanced, will recognize that our F1-scores are really high and say goodbye to any doubts about our model. <strong>Our model works, it is accurate and precise, and it prioritizes finding <i>malignant tumors</i> over finding <i>benign tumors</i></strong>.</p>
                 </div>
             </div>
         </div>
@@ -414,6 +416,7 @@
                 </div>
             </div>
         </div>
+        <br>
 
 
 
@@ -422,8 +425,8 @@
         <!-- AUTHORS' NAMES -->
         <div class="container-lg">
             <div class="row align-items-center">
-                <div class="col-12 justify-content-center">
-                    <p><i>2023 - <strong>Authors:</strong> Roberto Gerónimo Barrón Olvera, Luis Paul Garay Acosta, María José García, and Daniel R. Murillo Antuna.</i>
+                <div class="col text-center">
+                    <p><i>2023 - <strong>Authors:</strong> Roberto Gerónimo Barrón Olvera, Luis Paul Garay Acosta, María José García Montes, and Daniel R. Murillo Antuna.</i>
                 </div>
             </div>
         </div>
@@ -435,7 +438,7 @@
         <!-- JAVASCRIPT FILE -->
         <script type="text/javascript" src="/static/js/graphs.js"></script>
         <script>
-            // FORCE SCROLL FUNCTION ATTEMPT:
+            // FOR V2: FORCE SCROLL FUNCTION:
             // function forceScroll() {
             //     $(document).ready(function () {
             //         // Handler for .ready() called.
