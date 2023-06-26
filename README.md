@@ -123,6 +123,16 @@ Our team of four members successfully loaded the database, API, and dashboard on
 
 
 ### Dashboard:
+![Dashboard1](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/800458af-c1dd-46bc-a9fb-a8ae675cbde0)
+![Dashboard2](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/b02f48ab-5a17-4eb7-96a2-6eabb0afa928)
+![Dashboard3](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/0eb7e166-9bf2-4992-a11b-44aefbbbbe57)
+![Dashboard4](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/6602c694-07b6-4cdc-bb22-4df1a71d5e45)
+![Dashboard5](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/f7bccbb6-4cb1-4fe4-83e9-e32eae7c4d55)
+![Dashboard6](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/4467d360-31eb-461d-b39b-78c56fb0b8a2)
+![Dashboard7](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/432f9771-169f-43f3-b690-af1e43beeda2)
+![Dashboard8](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/3792df0c-80f3-42c3-b227-06751c9115ac)
+![Dashboard9](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/c07b3093-91ee-45f6-8938-5ed596305417)
+![Dashboard10](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/7c70a9ac-4fdb-4c11-a03e-c523c804c571)
 
 
 ### Conclusions:
