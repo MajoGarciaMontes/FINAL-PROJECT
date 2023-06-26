@@ -1,7 +1,10 @@
+// Created a const to get the model scores for the gauge charts by using the appropriate API route:
 const url = '/api/model-scores';
 
+// Read the JSON in the URL and created a function to plot the charts:
 d3.json(url).then(({breast_cancer_model_prediction_scores}) => {
-    
+  
+  // Defined the variables for each of the charts:
   const accuracyData = breast_cancer_model_prediction_scores.accuracy;
   const precisionBenign = breast_cancer_model_prediction_scores.precision.benign;
   const precisionMalignant = breast_cancer_model_prediction_scores.precision.malignant;
@@ -10,6 +13,7 @@ d3.json(url).then(({breast_cancer_model_prediction_scores}) => {
   const f1scoreBenign = breast_cancer_model_prediction_scores.f1score.benign;
   const f1scoreMalignant = breast_cancer_model_prediction_scores.f1score.malignant;
 
+  // Created a variable for the trace of the accuracy gauge chart:
   var accuracyGauge = {
     value: accuracyData,
     title: { text: "Accuracy" },
@@ -41,11 +45,11 @@ d3.json(url).then(({breast_cancer_model_prediction_scores}) => {
       }
     }
   };
+  // Plotted the accuracy gauge chart:
   Plotly.newPlot("accuracy-gauge", [accuracyGauge]);
 
-
-// Create the precision gauge plot for precisionBenign
-const PrecisionBenignGauge = {
+  // Created a variable for the trace of the precision gauge charts for benign tumors:
+  const PrecisionBenignGauge = {
   title: { text: "Precision for Benign Tumors" },
   value: precisionBenign,
   type: "indicator",
@@ -76,10 +80,10 @@ const PrecisionBenignGauge = {
     },
     value: precisionBenign
   }
-};
+  };
 
-// Create the precision gauge plot for precisionMalignant
-const PrecisionMalignantGauge = {
+  // Created a variable for the trace of the precision gauge charts for malignant tumors:
+  const PrecisionMalignantGauge = {
   title: { text: "Precision for Malignant Tumors" },
   value: precisionMalignant,
   type: "indicator",
@@ -110,15 +114,14 @@ const PrecisionMalignantGauge = {
     },
     value: precisionMalignant
   }
-};
+  };
 
-// Render the gauge plots side by side
-Plotly.newPlot("precision-benign-gauge", [PrecisionBenignGauge]);
-Plotly.newPlot("precision-malignant-gauge", [PrecisionMalignantGauge]);
+  // Plotted both of the precision charts:
+  Plotly.newPlot("precision-benign-gauge", [PrecisionBenignGauge]);
+  Plotly.newPlot("precision-malignant-gauge", [PrecisionMalignantGauge]);
 
-
-// Create the recall gauge plot for recallBenign
-const recallBenignGauge = {
+  // Created a variable for the trace of the recall gauge charts for benign tumors:
+  const recallBenignGauge = {
   title: { text: "Recall for Benign Tumors" },
   value: recallBenign,
   type: "indicator",
@@ -148,10 +151,10 @@ const recallBenignGauge = {
       value: recallBenign
     },
   }
-};
+  };
 
-// Create the recall gauge plot for recallMalignant
-const recallMalignantGauge = {
+  // Created a variable for the trace of the recall gauge charts for malignant tumors:
+  const recallMalignantGauge = {
   title: { text: "Recall for Malignant Tumors" },
   value: recallMalignant,
   type: "indicator",
@@ -181,14 +184,14 @@ const recallMalignantGauge = {
       value: recallMalignant
     },
   }
-};
+  };
 
-// Render the recall gauge plots side by side
-Plotly.newPlot("recall-benign-gauge", [recallBenignGauge]);
-Plotly.newPlot("recall-malignant-gauge", [recallMalignantGauge]);
+  // Plotted both of the recall charts:
+  Plotly.newPlot("recall-benign-gauge", [recallBenignGauge]);
+  Plotly.newPlot("recall-malignant-gauge", [recallMalignantGauge]);
 
-// Create the f1-score gauge plot for f1-scoreBenign
-const f1scoreBenignGauge = {
+  // Created a variable for the trace of the f1-score gauge charts for benign tumors:
+  const f1scoreBenignGauge = {
   title: { text: "F1-score for Benign Tumors" },
   value: f1scoreBenign,
   type: "indicator",
@@ -218,10 +221,10 @@ const f1scoreBenignGauge = {
       value: f1scoreBenign
     },
   }
-};
+  };
 
-// Create the f1score gauge plot for f1scoreMalignant
-const f1scoreMalignantGauge = {
+  // Created a variable for the trace of the f1-score gauge charts for malignant tumors:
+  const f1scoreMalignantGauge = {
   title: { text: "F1-score for Malignant Tumors" },
   value: f1scoreMalignant,
   type: "indicator",
@@ -251,9 +254,9 @@ const f1scoreMalignantGauge = {
       value: f1scoreMalignant
     },
   }
-};
+  };
 
-// Render the f1score gauge plots side by side
-Plotly.newPlot("f1-score-benign-gauge", [f1scoreBenignGauge]);
-Plotly.newPlot("f1-score-malignant-gauge", [f1scoreMalignantGauge]);
+  // Plotted both of the f1-score charts:
+  Plotly.newPlot("f1-score-benign-gauge", [f1scoreBenignGauge]);
+  Plotly.newPlot("f1-score-malignant-gauge", [f1scoreMalignantGauge]);
 });
