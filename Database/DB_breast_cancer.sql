@@ -1,1 +1,0 @@
-SELECT * FROM tumor_measures;
