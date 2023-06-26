@@ -49,38 +49,38 @@ This repository showcases a dashboard that portrays the answer to 2 principal qu
 2. Team members: Roberto Barrón, Luis Paul Garay, Alonso Lozano and Daniel Murillo. 
 3. Project description/outline: Breast Cancer Diagnosis Prediction using Machine Learning and Data Visualization
 
-##### - Introduction
+##### Introduction
    - Overview of the project's objective in leveraging data analytics and visualization for breast cancer diagnosis
    - Explanation of the significance of accurate and reliable predictions in healthcare decision-making
 
-##### - Data Collection and Preparation
+##### Data Collection and Preparation
    - Identify and gather a comprehensive dataset containing information on malign and benign tumors
    - Extract relevant variables and clinical attributes related to breast cancer diagnosis
    - Perform data cleaning, preprocessing, and feature engineering as needed
 
-##### - Machine Learning Model Development
+##### Machine Learning Model Development
    - Select appropriate machine learning algorithms (e.g., logistic regression, decision trees, random forests) for classification
    - Split the dataset into training and testing sets
    - Train the machine learning model using the training data
    - Evaluate and optimize the model's performance using suitable metrics and techniques (e.g., cross-validation, hyperparameter tuning)
 
-##### - User-Friendly Dashboard Design and Development
+##### User-Friendly Dashboard Design and Development
    - Create an intuitive and interactive dashboard for presenting the results of the machine learning model
    - Develop user input functionalities for entering tumor measurements and clinical attributes
    - Incorporate data visualization techniques to provide informative and visually appealing representations of the predictions and model reliability indicators
    - Implement a user-friendly interface that facilitates ease of use for medical professionals
 
-##### - Testing and Validation
+##### Testing and Validation
    - Conduct rigorous testing to ensure the accuracy and robustness of the machine learning model
    - Validate the model's predictions against known ground truth values
    - Assess the reliability indicators and performance metrics of the model
 
-##### - Documentation and Reporting
+##### Documentation and Reporting
    - Document the project's methodology, including data collection, model development, and dashboard design
    - Prepare a comprehensive report summarizing the project's objectives, processes, and outcomes
    - Provide clear instructions on how to use the developed tool and interpret the predictions
 
-##### - Conclusion
+##### Conclusion
    - Recap the achievements and potential impact of the project in breast cancer diagnosis
    - Reflect on the implications and benefits of utilizing data analytics and visualization in healthcare
    - Discuss future possibilities for expanding the project's scope or integrating additional features to enhance its utility
