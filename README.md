@@ -17,7 +17,7 @@ These variables include clinical attributes such as diagnosis, radius, texture, 
 ### Our objectives:
 The objective of this project was divided into three distinct stages. Firstly, the team focused on identifying and preparing a comprehensive database. This involved sourcing relevant data and ensuring its accuracy and completeness.
 The second stage entailed the development of a sophisticated machine learning model capable of providing accurate results by analyzing tumor measurements. Implicated leveraging advanced algorithms and techniques to train the model on the collected data, allowing it to make precise predictions or classifications.
-Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. They skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
+Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. We skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
 
 
 ### Personal reasons why we chose this topic:
@@ -28,8 +28,7 @@ Lastly, the team dedicated efforts to create an interactive and visually appeali
 
 ### Our project's rationale:
 The rationale for our project lies in addressing the critical need for accurate and efficient breast cancer detection. Breast cancer is a prevalent and potentially life-threatening disease that affects numerous individuals worldwide. The existing diagnostic methods, although effective, can be time-consuming, costly, and may have limitations in terms of accessibility.
-Our project aims to leverage the power of machine learning and data analysis to develop a reliable and automated system for breast cancer detection. By training a machine learning model on a comprehensive database of patient information, we seek to enhance the accuracy and efficiency of breast cancer diagnoses. This has the potential to improve patient outcomes, facilitate early detection, and enable timely intervention and treatment.
-Additionally, our project aims to bridge the gap in healthcare accessibility. By developing a system that can provide accurate assessments and predictions, we hope to empower healthcare professionals and individuals, particularly in areas with limited access to specialized healthcare facilities. This can potentially bring the benefits of advanced diagnostic capabilities to a wider population, contributing to more equitable healthcare outcomes.
+Our project aims to leverage the power of machine learning and data analysis to develop a reliable and automated system for breast cancer detection. By training a machine learning model on a comprehensive database of patient information, we seek to enhance the accuracy and efficiency of breast cancer diagnoses. This has the potential to improve patient outcomes, facilitate early detection, and enable timely intervention and treatment. Additionally, our project aims to bridge the gap in healthcare accessibility. By developing a system that can provide accurate assessments and predictions, we hope to empower healthcare professionals and individuals, particularly in areas with limited access to specialized healthcare facilities. This can potentially bring the benefits of advanced diagnostic capabilities to a wider population, contributing to more equitable healthcare outcomes.
 
 
 ### Finding "the" dataset:
@@ -136,10 +135,15 @@ Our team of four members successfully loaded the database, API, and dashboard on
 
 
 ### Conclusions:
+Our model demonstrated successful learning from the provided dataset, exhibiting a high level of predictive ability for breast cancer tumors. After training two different models, specifically random forest and logistic regression, we have determined that the random forest model outperformed the logistic regression model, achieving an accuracy rate of 98%. Accuracy represents the proportion of correct predictions made by our model. In this case, our model accurately predicts 98 out of 100 tumors. Other crucial metrics also indicate the effectiveness of our model in making predictions. The precision for benign tumors is significantly high at 99%, demostrating the proportion of accurate positive classifications specifically for benign cases. Similarly, the recall score for malignant tumors is 98%. The potential consequences of misclassifying a malignant tumor as benign are unacceptable. It is our main concern to provide appropriate and timely treatment rather than erroneously sending a cancer patient home.
+
+This project presents a simple yet highly potent solution. Our application holds the potential to substantially assist specialists in accurately diagnosing breast cancer tumors and providing more precise treatment. Also, this model shows applicable scalability, to achieve this, using a more recent database for training the model would be great for the model,providing predictions that are more reliable. Another crucial action that would improve our performance metrics is the availability of a larger dataset, facilitating the opportunity to explore alternative models, including neural networks.
+
+This project has contributed to our comprehension of the pipeline that should be adopted for data analytics projects. It has allow us to conceptualize the correct and reliable approach towards addressing data-related challenges, as well as the necessary creation and organization of tasks for the complete deployment of a valuable data analysis and visualization framework to support decision-making processes.
+
 
 #### Project presentation:
-It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](). The deck is titled: *'Breask Cancer ML.pdf
-'*, and it's a PDF file, so it's very accesible.
+It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Presentation/Breast%20cancer%20ML.pptx). The deck is titled: *'Breask Cancer ML.pptx'*.
 
 
 *explain all the folders ej.*
@@ -177,7 +181,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
