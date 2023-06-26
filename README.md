@@ -107,7 +107,7 @@ Note: This project outline provides a framework for developing a machine learnin
 
 #### Project development and changes:
 This is the final sketch of the visualizations we'd like to create:
-![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/SKETCH%20OF%20THE%20PROJECT.png)<br>
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Sketch%20project%20Breast%20Cancer.png)<br>
 
 
 #### Creating a tailored API:
