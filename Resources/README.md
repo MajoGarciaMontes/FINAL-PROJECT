@@ -1,12 +1,12 @@
 You are in the *Resources* folder. It contains the sketch for the proyect, the data and the cleaned data :
 
-### The *Dashboard-benign-prediction.png*
+### The *Dashboard-benign-prediction.png* image:
 It's an image that shows what appears when a prediction turns out to be a 'benign tumor' in the main webpage of our app.
 
-### The *Dashboard-main.png*
+### The *Dashboard-main.png* image:
 It's a screenshot of the entire main webpage of our app.
 
-### The *Dashboard-malignant-prediction.png*
+### The *Dashboard-malignant-prediction.png* image:
 It's an image that shows what appears when a prediction turns out to be a 'malignant tumor' in the main webpage of our app.
 
 ### The *Sketch project Breast Cancer.png* image:
