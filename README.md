@@ -1,5 +1,5 @@
 
-# Breast cancer prediction model app (Machine Learning Algorithm)
+# Predicting Breast Cancer app (Machine Learning Algorithm)
 
 ## Authors
 Daniel R. Murillo Antuna: [@dan-murillo](https://www.github.com/dan-murillo)<br>
@@ -9,163 +9,102 @@ Roberto Gerónimo Barrón Olvera: [@barronr03](https://github.com/barronr03)
 
 
 ## Repository and project description
-Healthcare is a field that can be strongly supported by data analytics and visualization projects, we now have the opportunity to use this technologies for a better diagnosis to a possible breast cancer disease. We focus on the development and implementation of a machine learning algorithm trained with a dataset containing information about malign and benign tumors. The project intend to deliver a powerful tool that can assist medical professionals in making informed decisions to patients by predicting tumor classification with high accuracy.
-Our proposal is to develop a Machine Learning model aimed to learn through several breast cancer variables (30) that measure tumors, in order to predict the probability of developing breast cancer with great reliability.
-These variables include clinical attributes such as diagnosis, radius, texture, perimeter, area, smoothness, compactness, concavity, symmmetry, fractal dimension, among others. Furthermore, the results of the machine learning algorithm will be presented in an user-friendly dashboard. The dashboard will provide an interactive interface, that includes fun facts, input values, reliability in the model indicators and the predction. Medical professionals can  receive instantaneous predictions about tumor classification (benign, malignant) this will help making accurate decisions regarding further diagnostics and treatment planning. 
-
+Healthcare is a field that can receive important contributions from data analytics. One of the most common diseases is unfortunately breast cancer. It is a prevalent and potentially life-threatening disease that affects numerous individuals worldwide. According to [the National Cancer Institute](https://www.cancer.gov/types/breast/risk-fact-sheet), ‘a woman born today has about a 1 in 8 chance of being diagnosed with breast cancer at some time during her life’. That is a very high chance! Although in recent years the screening for breast cancer has shown substantial improvements, it is still time-consuming, costly, and may have limitations in terms of accessibility. Therefore, the screening can still be improved with technology. We had the opportunity to use technology to better predict breast cancer. We focused on the development and implementation of a Machine Learning (ML) algorithm, which was trained with a dataset that contained many observations of relevant variables about breast cancer tumors and a defined classification for each of the observations: benign or malignant tumor. 
 
 ### Our objectives:
-The objective of this project was divided into three distinct stages. Firstly, the team focused on identifying and preparing a comprehensive database. This involved sourcing relevant data and ensuring its accuracy and completeness.
-The second stage entailed the development of a sophisticated machine learning model capable of providing accurate results by analyzing tumor measurements. Implicated leveraging advanced algorithms and techniques to train the model on the collected data, allowing it to make precise predictions or classifications.
-Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. We skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
+This project aimed to leverage the power of ML and data analysis to develop a reliable and automated system for breast cancer detection. We wanted to deliver a powerful and quick tool that can assist medical professionals in making informed decisions. We also wanted to develop an app that can predict the type of tumor a patient has with high accuracy. We wanted this app to have a user-friendly dashboard that could be used by any medical professional, but particularly physicians.
 
+### Our rationale:
+Scientists have done a great job by improving the accuracy of biopsies and other tests commonly used to detect breast cancer in the last years. However, there are still some obstacles to overcome. First, not everyone has access to them, as not everyone is insured and/or can cover the costs of having those tests done. Second, getting the results usually takes 2 or 3 days or it can sometimes even take a week or longer, so there is much room for improvement in this area. Last, the health system is often overstretched, hence, appointments and tests can be hard to schedule.
 
-### Personal reasons why we chose this topic:
-The objective of this project was divided into three distinct stages. Firstly, the team focused on identifying and preparing a comprehensive database. This involved sourcing relevant data and ensuring its accuracy and completeness.
-The second stage entailed the development of a sophisticated machine learning model capable of providing accurate results by analyzing tumor measurements. This involved leveraging advanced algorithms and techniques to train the model on the collected data, allowing it to make precise predictions or classifications.
-Lastly, the team dedicated efforts to create an interactive and visually appealing user interface. They skillfully crafted HTML, JSON, and CSS components to present the gathered information in an intuitive manner. This interface not only facilitated the seamless presentation of results but also empowered users to interact with the data, enabling them to explore and gain insights from the provided information.
+### Project proposal:
+Our proposal was to develop a ML model that learnt by being fed relevant measures of breast cancer tumors in order to reliably predict whether new data would be related to a benign or a malignant tumor.
+The variables with which we would train our model included clinical variables, such as diagnosis, radius, texture, perimeter, area, smoothness, compactness, concavity, symmmetry, and fractal dimension of the tumor. We would make a user-friendly dashboard in a webpage with fun facts, a section to enter tumor-related values, a button to make a prediction based on the entered values, and charts that showed how reliable our model was. Medical professionals would be able to use the app for free, enter their own patient's data, and receive instantaneous predictions about whether the tumor was benign or malignant *—no more "waiting days to get the results"*. Our project would have the potential to improve patient outcomes by further improving early detection and giving access to a reliable cancer prediction tool to any medical professional. We would go about our project by creating a dashboard sketch, doing ETL (data cleansing of the original dataset, and database creation in ```SQL```), training several ML models and choosing one, creating the API with ```Python``` and ```Flask```, coding the dashboard with ```HTML``` and ```JavaScript```, testing the API and the dashboard, and making a presentation of our project.
 
+### Finding the dataset:
+We looked for breast-cancer-related datasets in many websites, databases, and search engines, such as [Google Datasearch](https://datasetsearch.research.google.com/), [FiveThirtyEight](https://fivethirtyeight.com/), [Data.gov](https://data.gov/), and [Kaggle](https://www.kaggle.com/). We ended up finding several datasets, but we decided it was best to use the [University of California Irvine's](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data) because all the variables were clearly defined, rather than defined as ranges of something, and medical professionals can have access to their own patient's data from previous biopsies.
 
-### Our project's rationale:
-The rationale for our project lies in addressing the critical need for accurate and efficient breast cancer detection. Breast cancer is a prevalent and potentially life-threatening disease that affects numerous individuals worldwide. The existing diagnostic methods, although effective, can be time-consuming, costly, and may have limitations in terms of accessibility.
-Our project aims to leverage the power of machine learning and data analysis to develop a reliable and automated system for breast cancer detection. By training a machine learning model on a comprehensive database of patient information, we seek to enhance the accuracy and efficiency of breast cancer diagnoses. This has the potential to improve patient outcomes, facilitate early detection, and enable timely intervention and treatment. Additionally, our project aims to bridge the gap in healthcare accessibility. By developing a system that can provide accurate assessments and predictions, we hope to empower healthcare professionals and individuals, particularly in areas with limited access to specialized healthcare facilities. This can potentially bring the benefits of advanced diagnostic capabilities to a wider population, contributing to more equitable healthcare outcomes.
+### Our project's development:
+After identifying the dataset we would use, we continued our journey with three main questions:
+- What is the best ML model to use?
+- What classification fits each patient's tumor? (*benign* or *malignant*)
+- What is the accuracy of our predictions?
+Then, we followed the next steps:
 
+#### 1. Dashboard sketch:
+This was the sketch of the visualizations we wanted to create:<br>
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Sketch%20project%20Breast%20Cancer.png)<br>
 
-### Finding "the" dataset:
-According to the National Cancer Institute, ‘a woman born today has about a 1 in 8 chance of being diagnosed with breast cancer at some time during her life’. That is a very high chance! Therefore, we must have better models that predict breast cancer at an early stage. For this project, the team decided to work on improving the screening for breast cancer with Machine Learning models. Breast cancer is a disease that can significantly impact the lives of many women and can be deadly if not detected and treated early. Moreover, the costs of having more advanced tests done in order to determine whether a tumor is benign or malignant can go up exponentially, which means that not every patient will be able to have them done.
-Hence, we want to develop an app that doctors can easily use to input specific patient data, and the app will classify the patient's tumor into one of two categories: ‘benign’ or ‘malignant’. This app will be trained with intelligent models and fed data of correct previously made diagnoses. It will be accurate and precise, and it could be a great option for doctors to use before prescribing patients more expensive tests that the latter might not be able to afford.
+#### 2. ETL: 
+We extracted the dataset from the website and read it in a ```Jupyter Notebook```, we transformed the data by getting rid of unnecessary columns and completely codifying it with numbers —*that meant replacing the string values of some columns*— , and we generated a CSV file with the clean data to be loaded in a ```SQL``` database. We created the database and ended up with two tables: the main table with the patients' observations and a related table, which contained the diagnosis classification strings. 
 
-### ETL: 
-1. Data cleansing of the original dataset.
-2. Database creation (SQL).
+#### 3. ML models' development:
+We knew we needed classification ML models, so we chose a logistic regression model and a random forests model. There were 30 features (the mean, the standard error, and the largest measurement of each of the following variables: radius, texture, perimeter, area, smoothness, compactness, concavity, symmmetry, and fractal dimension of the tumor) and 1 target variable (tumor classification) with which to work. We split the dataset into training and testing sets, train the models, evaluated and optimized each model's performance, and concluded that the random forests model was the best because it had the highest accuracy, precision, and recall scores. At the end, we used ```pickle5``` to save our trained random forests model and scaler. We had never used ```pickle5``` before, so we had to learn it to efficiently serialize and deserialize our model and scaler. Learning that library helped us to better understand the implicit steps necessary for the successful development of a robust data analytics project.  
 
+#### 4. Creating the app:
+We used ```Python```, ```Flask```, ```Flask-CORS```, and ```Pandas``` to create an app that had the following 4 routes:
+- '/' <--- *This is the home route where the user can find information about all the other routes.*
+- '/api/prediction/' <--- *This route makes the prediction by using our trained ML model and scaler; it is not accessible unless the user fills out the form in the main webpage. The prediction is displayed there.*
+- '/api/model-scores' <--- *This route sends a JSON of our model's accuracy, precision, recall, and F1 scores.*
+- '/api/index/' <--- *This route returns the main webpage that contains information, our dashboard, and the form.*
+Although we initially planned to have more data, particularly from the database, to include more graphs in our dashboard, due to time we could not do so. We also thought the main webpage contained plenty of information already, so we didn't add more things to version 1 (V1) of the app.
 
-### The *Breast cancer prediction model dashboard* project displays:
-This repository showcases a dashboard that portrays the answer to 2 principal questions: What classification fits the patient? (benign / malignant tumor) and What is the accuracy of the classification? The main function of the dashboard is to make a prediction based in the 30 variables input data. The building of the dashboard went through different stages:
+#### 5. Coding the app's dashboard:
+We used ```HTML```, ```JavaScript```, ```Bootstrap v5.3```, and ```Jinja2``` to create the form that medical professionals would fill out to get our model to make a prediction. The dashboard shows the user our model's scores and tells them how accurate and precise it is. The charts were created with ```D3.JS``` and ```Plotly```. We also added icons and information about breast cancer and made it as user-friendly as possible. Due to ethical concerns, we decided to add a text below every prediction, which would remind medical professionals to follow the guidance of the Centers for Disease Control and Prevention (CDC) and follow their gut if they felt their patient needed further testing. We would have liked to have multiple webpages, which would have allowed us to have more graphs, information about our model, and maybe even code, but we thought that what we did was enough for medical professionals. Maybe in the future we could improve the UI/UX of the webpage with the help of an experienced professional.
 
-#### Project proposal:
-1. Title: Breast cancer prediction model (Machine Lerning Algorithm). 
-2. Team members: Roberto Barrón, Luis Paul Garay, Alonso Lozano and Daniel Murillo. 
-3. Project description/outline: Breast Cancer Diagnosis Prediction using Machine Learning and Data Visualization
+#### Testing the app:
+We conducted rigorous testing of the app to catch bugs. We debugged the code until it ran smoothly and ended up with an optimized V1 of the app.
 
-##### Introduction
-   - Overview of the project's objective in leveraging data analytics and visualization for breast cancer diagnosis
-   - Explanation of the significance of accurate and reliable predictions in healthcare decision-making
+#### Documentation and reporting:
+We didn't consider this step in our project's proposal. Nevertheless, it was necessary. We documented the project's methodology, wrote a summary of our objectives, processes, change of plans, and outcomes in this README file. We also thoroughly commented all the code included in this repository, so that you understand what each line is doing.
 
-##### Data Collection and Preparation
-   - Identify and gather a comprehensive dataset containing information on malign and benign tumors
-   - Extract relevant variables and clinical attributes related to breast cancer diagnosis
-   - Perform data cleaning, preprocessing, and feature engineering as needed
-
-##### Machine Learning Model Development
-   - Select appropriate machine learning algorithms (e.g., logistic regression, decision trees, random forests) for classification
-   - Split the dataset into training and testing sets
-   - Train the machine learning model using the training data
-   - Evaluate and optimize the model's performance using suitable metrics and techniques (e.g., cross-validation, hyperparameter tuning)
-
-##### User-Friendly Dashboard Design and Development
-   - Create an intuitive and interactive dashboard for presenting the results of the machine learning model
-   - Develop user input functionalities for entering tumor measurements and clinical attributes
-   - Incorporate data visualization techniques to provide informative and visually appealing representations of the predictions and model reliability indicators
-   - Implement a user-friendly interface that facilitates ease of use for medical professionals
-
-##### Testing and Validation
-   - Conduct rigorous testing to ensure the accuracy and robustness of the machine learning model
-   - Validate the model's predictions against known ground truth values
-   - Assess the reliability indicators and performance metrics of the model
-
-##### Documentation and Reporting
-   - Document the project's methodology, including data collection, model development, and dashboard design
-   - Prepare a comprehensive report summarizing the project's objectives, processes, and outcomes
-   - Provide clear instructions on how to use the developed tool and interpret the predictions
-
-##### Conclusion
-   - Recap the achievements and potential impact of the project in breast cancer diagnosis
-   - Reflect on the implications and benefits of utilizing data analytics and visualization in healthcare
-   - Discuss future possibilities for expanding the project's scope or integrating additional features to enhance its utility
+#### Finishing our project:
+- We recapped the achievements and potential impacts of the project in breast cancer diagnosis.
+- We reflected on the implications and benefits of utilizing data analytics and visualization in healthcare
+- We discused future possibilities for expanding the project's scope or integrating additional features to enhance its utility.
 
 Note: This project outline provides a framework for developing a machine learning-based breast cancer diagnosis prediction tool with a user-friendly dashboard. You can customize and expand upon it to suit the specific requirements and resources available to you.
 
-4. Reearch question to answer: What classification fits the patient? (benign / malignant tumor) and What is the accuracy of the classification? <--- *Questions answered*
-5. Dataset to be used: Breast Cancer Wisconsin (Diagnostic) Data Set, https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data/code <--- *Dataset used*
-6. Rough breakdown of tasks: <--- *Accurate*
-- Visual inspirations and dashboard sketch.
-- Data cleansing of the original dataset.
-- Database creation (SQL)
-- Creation of the API.
-- Dashboard coding (JavaScript and HTML)
-- User testing.
-- Presentation.
+#### The main webpage with our dashboard:
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Dashboard-main.png)
 
+##### How a *benign tumor* prediction looks like:
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Dashboard-benign-prediction.png)
 
-### Project development and changes:
-This is the final sketch of the visualizations we'd like to create:
-![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Sketch%20project%20Breast%20Cancer.png)<br>
+##### How a *malignant tumor* prediction looks like:
+![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Dashboard-malignant-prediction.png)
 
+#### Our project's presentation:
+We created a slide deck to present this project. It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Predicting_breast_cancer_presentation.pdf). The deck is titled: *Predicting_breast_cancer_presentation.pdf*.
 
-### Creating a tailored API:
-We used SQL, Python, Pandas, Flask, and Flask-CORS to first, clean the data, then, build an Entity Relationship Diagram (ERD), a schema, and a local database, and last, create an API with personalized routes for each element of the dashboard. The routes created were the following:
-- / <--- *Welcome to our Project 4 API - Predicting Breast Cancer with Machine Learning. This is the main route of the API where the user finds information about all the other routes.*
-- /api/prediction/ <--- *This route make the prediction of our ML model with the input data.*
-- /api/model-scores <--- *This route send a JSON of our necesary values for dashboarding our priciple reliablity (on the model) indicators.*
-- /api/index/ <--- *This route returned the HTML file to be able to open it while running the app.*
-All our code is thoroughly commented, so that you understand what each piece is doing.
+### Conclusions of the project:
+Our model demonstrated successful learning from the dataset and exhibited a high level of predictive ability for breast cancer tumors. After training two different models, we observed that the random forest model outperformed the logistic regression model because the former achieved an accuracy rate of 98%. Accuracy represents the proportion of correct predictions made by our model. In this case, our model accurately predicts 98 out of 100 tumors. Other crucial metrics also indicate the effectiveness of our model in making predictions. The precision for benign tumors is significantly high at 99%, demostrating the proportion of accurate positive classifications specifically for benign cases. Similarly, the recall score for malignant tumors is 98%. The potential consequences of misclassifying a malignant tumor as benign are unacceptable. It was our main concern to provide appropriate and timely predictions that could lead to treatment for malignant tumors rather than erroneously send a patient with cancer home.
 
+This project presents a simple yet highly potent solution. Our application has the potential to substantially assist specialists in accurately diagnosing breast cancer tumors and providing treatment sooner. Also, this model can be scaled by using more recent databases to train new models, finding more features that could improve our model's scores, or using a dataset with more observations, which would work well with other models, such as neural networks.
 
-### Connecting the API / dashboarding:
-*cambiar este texto no lo cambié para que se basen en el*
-We used JavaScript and HTML to create the interactive data visualizations mentioned in the previous paragraph. The API integrates Python for efficient data structuring, and restructures the data in a way that the end routes generate the desirable format of the JSONs. More importantly, we restructured the data so that we could compare the answers of three voter categories defined by the researchers of this survey: 'always' —also called *regular voters* in this project— voters or citizens who always vote, 'sporadic' voters or citizens who voted in at least two elections, but fewer than all-but-one, and 'rarely/never' voters —also called *non-voters* in this project— or those who voted in one or none of the elections in which they were eligible to vote. The dashboard lets the user easily filter the charts by those three categories. In order to create those filters, we used functions and [D3.JS](https://d3js.org/) to extract the voter categories and only the objects we needed, which were then turned into arrays to feed the charts. The HTML file was created with the help of [Bootstrap v5.3](https://getbootstrap.com/). Once again, all our code is thoroughly commented, so that you find it easy to understand and scale.
+This project helped us understand the pipeline that should be adopted for data analytics projects. It allowed us to conceptualize a correct and reliable approach towards addressing data-related challenges, as well as the necessary creation and organization of tasks for the complete deployment of a valuable data analysis and visualization framework to support decision-making processes.
 
+In the main tree of this repository, you will find:
+### The *Database* folder:
+It contains the Jupyter Notebook we sued for data cleansing and model training, the physical Entity-Relationship Diagram (ERD) of our database, as well as the SQL schema.
 
-### User testing:
-Our team of four members successfully loaded the database, API, and dashboard onto our local computers. Collaboratively, we debugged the code until it ran smoothly. We first focused on constructing the API, defining routes for each element essential to our dashboard's objectives. As we progressed, we transition into coding HTML and Javascript, which allowed us to develop an appealing visual interface for the dashboard. Along the way, we acquired a new skill: utilizing the pickle 5 module for efficient serialization and deserialization of Python objects. This serves as a comprehensive resource to make us understand the implicit steps necessary for the successful development of a robust data analytics project.  
+### The *ML_model* folder:
+It contains two files: "rf_model.pkl" file and "rf_scaler.pkl" which are our trained model and scaler respectively.
 
+### The *Resources* folder:
+It contains the sketch of our dashboard, the final dashboard images, a CSV file of the original database, and a CSV file with the clean data.
 
-### Dashboard:
-![Dashboard1](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/800458af-c1dd-46bc-a9fb-a8ae675cbde0)
-![Dashboard2](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/b02f48ab-5a17-4eb7-96a2-6eabb0afa928)
-![Dashboard3](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/0eb7e166-9bf2-4992-a11b-44aefbbbbe57)
-![Dashboard4](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/6602c694-07b6-4cdc-bb22-4df1a71d5e45)
-![Dashboard5](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/f7bccbb6-4cb1-4fe4-83e9-e32eae7c4d55)
-![Dashboard6](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/4467d360-31eb-461d-b39b-78c56fb0b8a2)
-![Dashboard7](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/432f9771-169f-43f3-b690-af1e43beeda2)
-![Dashboard8](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/3792df0c-80f3-42c3-b227-06751c9115ac)
-![Dashboard9](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/c07b3093-91ee-45f6-8938-5ed596305417)
-![Dashboard10](https://github.com/MajoGarciaMontes/FINAL-PROJECT/assets/120349840/7c70a9ac-4fdb-4c11-a03e-c523c804c571)
+### The *app* folder:
+It has the app we developed; the *static* folder, which has the *graphs.js*; and the *templates* folder that contains the *base.html* and *index.html*, which work together to give life to our dashboard.
 
+### The *Predicting_breast_cancer_presentation.pdf* file:
+It's the slide deck of our presentation. It contains summarized relevant information about our porject.
 
-### Conclusions:
-Our model demonstrated successful learning from the provided dataset, exhibiting a high level of predictive ability for breast cancer tumors. After training two different models, specifically random forest and logistic regression, we have determined that the random forest model outperformed the logistic regression model, achieving an accuracy rate of 98%. Accuracy represents the proportion of correct predictions made by our model. In this case, our model accurately predicts 98 out of 100 tumors. Other crucial metrics also indicate the effectiveness of our model in making predictions. The precision for benign tumors is significantly high at 99%, demostrating the proportion of accurate positive classifications specifically for benign cases. Similarly, the recall score for malignant tumors is 98%. The potential consequences of misclassifying a malignant tumor as benign are unacceptable. It is our main concern to provide appropriate and timely treatment rather than erroneously sending a cancer patient home.
+## Final words
+We hope you find our dashboard of good use because we know we have.
 
-This project presents a simple yet highly potent solution. Our application holds the potential to substantially assist specialists in accurately diagnosing breast cancer tumors and providing more precise treatment. Also, this model shows applicable scalability, to achieve this, using a more recent database for training the model would be great for the model,providing predictions that are more reliable. Another crucial action that would improve our performance metrics is the availability of a larger dataset, facilitating the opportunity to explore alternative models, including neural networks.
-
-This project has contributed to our comprehension of the pipeline that should be adopted for data analytics projects. It has allow us to conceptualize the correct and reliable approach towards addressing data-related challenges, as well as the necessary creation and organization of tasks for the complete deployment of a valuable data analysis and visualization framework to support decision-making processes.
-
-
-#### Project presentation:
-It took place via Zoom on 26th June 2023. You can find the slide deck above and on [this link](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Presentation/Breast%20cancer%20ML.pptx). The deck is titled: *'Breask Cancer ML.pptx'*.
-
-#### The *Database* folder:
-It contains the "ETL and ML model testing.ipynb" file which shows the essential code for data cleansing and model training, physical Entity-Relationship Diagram (ERD) of our database, as well as the schema and the SQL queries for database creation.
-
-#### The *ML_model* folder:
-It contains two files: "rf_model.pkl" file and "rf_scaler.pkl" which are pickle files for use in our Flask API.
-
-#### The *Presentation* folder:
-It's a Power Point file that contains the slide deck of our presentation.: "Breast cancer ML.pptx" which will inform you about all the relevant information about our porject.
-
-#### The *Resources* folder:
-It contains the first sketch and final dashboard images, the files used to clean the data, the original database csv and the clean database csv.
-
-#### The *app* folder:
-It has the API we developed, the static folder which has the "graphs.js", also you can find the templates folder, which contains the "base.html" and "index.html", which synergy together to give life to our dashboard.
-
-
-### Final words:
-We hope you, user, find our dashboard of good use because we know we have.
-
-## Data Reference
-- Breast Cancer Wisconsin (Diagnostic) Data Set: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data/code 
+## Data References
+- Breast Cancer Wisconsin (Diagnostic) Data Set: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
 
 - UC Irvine "Breast Cancer Data": https://archive.ics.uci.edu/dataset/14/breast+cancer
 
