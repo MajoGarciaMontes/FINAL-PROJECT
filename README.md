@@ -8,7 +8,7 @@ María José García: [@MajoGarciaMontes](https://github.com/MajoGarciaMontes)<b
 Roberto Gerónimo Barrón Olvera: [@barronr03](https://github.com/barronr03)
 
 
-## Repository and project description
+## Project overview and repository description
 Healthcare is a field that can receive important contributions from data analytics. One of the most common diseases is unfortunately breast cancer. It is a prevalent and potentially life-threatening disease that affects numerous individuals worldwide. According to [the National Cancer Institute](https://www.cancer.gov/types/breast/risk-fact-sheet), ‘a woman born today has about a 1 in 8 chance of being diagnosed with breast cancer at some time during her life’. That is a very high chance! Although in recent years the screening for breast cancer has shown substantial improvements, it is still time-consuming, costly, and may have limitations in terms of accessibility. Therefore, the screening can still be improved with technology. We had the opportunity to use technology to better predict breast cancer. We focused on the development and implementation of a Machine Learning (ML) algorithm, which was trained with a dataset that contained many observations of relevant variables about breast cancer tumors and a defined classification for each of the observations: benign or malignant tumor. 
 
 ### Our objectives:
@@ -52,20 +52,18 @@ Although we initially planned to have more data, particularly from the database,
 #### 5. Coding the app's dashboard:
 We used ```HTML```, ```JavaScript```, ```Bootstrap v5.3```, and ```Jinja2``` to create the form that medical professionals would fill out to get our model to make a prediction. The dashboard shows the user our model's scores and tells them how accurate and precise it is. The charts were created with ```D3.JS``` and ```Plotly```. We also added icons and information about breast cancer and made it as user-friendly as possible. Due to ethical concerns, we decided to add a text below every prediction, which would remind medical professionals to follow the guidance of the Centers for Disease Control and Prevention (CDC) and follow their gut if they felt their patient needed further testing. We would have liked to have multiple webpages, which would have allowed us to have more graphs, information about our model, and maybe even code, but we thought that what we did was enough for medical professionals. Maybe in the future we could improve the UI/UX of the webpage with the help of an experienced professional.
 
-#### Testing the app:
+#### 6. Testing the app:
 We conducted rigorous testing of the app to catch bugs. We debugged the code until it ran smoothly and ended up with an optimized V1 of the app.
 
-#### Documentation and reporting:
+#### 7. Documentation and reporting:
 We didn't consider this step in our project's proposal. Nevertheless, it was necessary. We documented the project's methodology, wrote a summary of our objectives, processes, change of plans, and outcomes in this README file. We also thoroughly commented all the code included in this repository, so that you understand what each line is doing.
 
-#### Finishing our project:
+#### 8. Finishing our project:
 - We recapped the achievements and potential impacts of the project in breast cancer diagnosis.
 - We reflected on the implications and benefits of utilizing data analytics and visualization in healthcare
 - We discused future possibilities for expanding the project's scope or integrating additional features to enhance its utility.
 
-Note: This project outline provides a framework for developing a machine learning-based breast cancer diagnosis prediction tool with a user-friendly dashboard. You can customize and expand upon it to suit the specific requirements and resources available to you.
-
-#### The main webpage with our dashboard:
+##### The main webpage with our dashboard:
 ![image](https://github.com/MajoGarciaMontes/FINAL-PROJECT/blob/main/Resources/Dashboard-main.png)
 
 ##### How a *benign tumor* prediction looks like:
@@ -85,6 +83,7 @@ This project presents a simple yet highly potent solution. Our application has t
 This project helped us understand the pipeline that should be adopted for data analytics projects. It allowed us to conceptualize a correct and reliable approach towards addressing data-related challenges, as well as the necessary creation and organization of tasks for the complete deployment of a valuable data analysis and visualization framework to support decision-making processes.
 
 In the main tree of this repository, you will find:
+
 ### The *Database* folder:
 It contains the Jupyter Notebook we sued for data cleansing and model training, the physical Entity-Relationship Diagram (ERD) of our database, as well as the SQL schema.
 
@@ -101,7 +100,7 @@ It has the app we developed; the *static* folder, which has the *graphs.js*; and
 It's the slide deck of our presentation. It contains summarized relevant information about our porject.
 
 ## Final words
-We hope you find our dashboard of good use because we know we have.
+This project outline provides a framework for developing a machine learning-based breast cancer diagnosis prediction tool with a user-friendly dashboard. You can customize and expand upon it to suit the specific requirements and resources available to you. We hope you find our app of good use because we know we have.
 
 ## Data References
 - Breast Cancer Wisconsin (Diagnostic) Data Set: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data
