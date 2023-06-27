@@ -1,5 +1,6 @@
 
 # Predicting Breast Cancer app (Machine Learning Algorithm)
+We created an app that predicts benign and malignant breast tumors.
 
 ## Authors
 Daniel R. Murillo Antuna: [@dan-murillo](https://www.github.com/dan-murillo)<br>
