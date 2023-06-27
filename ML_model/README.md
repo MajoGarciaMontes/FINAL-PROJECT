@@ -1,6 +1,7 @@
-You are in the *ML_model* folder. It contains the rf model made with pickel:
+You are in the *ML_model* folder. It contains our trained random forest model and the scaler:
+
 ### The *rf_model.pkl*:
-It contains the code code for the model.
+It's our trained random forest model.
 
 ### The *rf_scaler.pkl*:
-It contains the code code for the scaler.
+It's the scaler of our trained model.
